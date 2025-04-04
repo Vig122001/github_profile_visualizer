@@ -1,7 +1,8 @@
 import { Navigate } from 'react-router-dom';
-import { useSelector } from 'react-redux';
 import HomePage from '../pages/home';
 import ReposPage from '../pages/repositories';
+import AnalysisPage from '../pages/analysis';
+import MainLayout from '../layout/MainLayout';
 
 const routes = [{
     path: "/",
