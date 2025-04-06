@@ -4,9 +4,25 @@
 
 body {
   margin: 0;
+  padding: 0;
+  background-color: #0F172A;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'HK Grotesk';
+  src: url('./assets/fonts/HankenGrotesk-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HK Grotesk';
+  src: url('./assets/fonts/HankenGrotesk-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
 }
