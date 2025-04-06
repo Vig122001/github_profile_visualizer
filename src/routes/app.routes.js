@@ -8,7 +8,7 @@ const routes = [{
     path: "/",
     element: <MainLayout />,
     children: [
-        { path: "/", element: <Navigate to='/menu' /> },
+        { path: "/", element: <Navigate to='/home' /> },
         { path: "/home", element: <HomePage /> },
         { path: "/repos", element: <ReposPage /> },
         { path: "/analysis", element: <AnalysisPage /> },

@@ -1,19 +1,16 @@
 import React from "react";
-import { useRoutes, useLocation } from "react-router-dom";
+import { useRoutes } from "react-router-dom";
 import routes from "./routes/app.routes";
+import { Box } from "@mui/material";
 
 const App = () => {
-    const location = useLocation();
-  
-    const appRoutes = useRoutes(routes);  
+    const appRoutes = useRoutes(routes);
 
     return (
-        <div>
-            <div className="container">
-                {appRoutes}
-            </div>
-        </div>
-    )
+        <Box sx={{ minHeight: "100vh", width: "100vw" }}>
+            {appRoutes}
+        </Box>
+    );
+};
 
-}
-export default App
+export default App;
