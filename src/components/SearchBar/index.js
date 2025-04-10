@@ -16,7 +16,8 @@ export default function SearchBar() {
         },
         marginRight: theme.spacing(2),
         marginLeft: 0,
-        width: '60%',
+        width: '35%',
+        height: '60px',
         [theme.breakpoints.up('sm')]: {
             marginLeft: theme.spacing(3),
         },
@@ -34,7 +35,7 @@ export default function SearchBar() {
         backgroundColor: "#4F4E4C",
         color: '#fff',
         height: '100%',
-        width: '5%',
+        width: '10%',
         pointerEvents: 'none'
     }));
 
@@ -42,6 +43,7 @@ export default function SearchBar() {
     const StyledInputBase = styled(InputBase)(({ theme }) => ({
         color: 'inherit',
         '& .MuiInputBase-input': {
+            fontSize: '1.5rem',
             padding: theme.spacing(1, 1, 1, 0),
             paddingLeft: `calc(1em + ${theme.spacing(4)})`,
             transition: theme.transitions.create('width'),
