@@ -14,12 +14,12 @@ export default function SearchBar() {
         '&:hover': {
             backgroundColor: alpha("#1D2537", 1),
         },
-        marginRight: theme.spacing(2),
-        marginLeft: 0,
-        width: '35%',
-        height: '60px',
+        maxWidth: '270px',
+        width: '100%',
+        height: '32px',
         [theme.breakpoints.up('sm')]: {
-            marginLeft: theme.spacing(3),
+            height: '56px',
+            maxWidth: '500px',
         },
         display: 'flex',
         justifyContent: 'space-between',
@@ -31,28 +31,35 @@ export default function SearchBar() {
         background: 'none',
         border: 'none',
         outline: 'none',
-        boxShadow: 'none',    
+        boxShadow: 'none',
         backgroundColor: "#4F4E4C",
         color: '#fff',
         height: '100%',
-        width: '10%',
-        pointerEvents: 'none'
+        width: '32px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        pointerEvents: 'none',
+        [theme.breakpoints.up('sm')]: {
+            width: '60px',
+        },
     }));
 
 
     const StyledInputBase = styled(InputBase)(({ theme }) => ({
         color: 'inherit',
         '& .MuiInputBase-input': {
-            fontSize: '1.5rem',
-            padding: theme.spacing(1, 1, 1, 0),
+            fontSize: '12px',
             paddingLeft: `calc(1em + ${theme.spacing(4)})`,
             transition: theme.transitions.create('width'),
-            [theme.breakpoints.up('md')]: {
+            flexGrow: 1,
+            width: '100%',
+            [theme.breakpoints.up('sm')]: {
                 width: '20ch',
+                fontSize: '24px',
             },
         },
     }));
-
 
     return (
         <Search>
@@ -61,7 +68,13 @@ export default function SearchBar() {
                 inputProps={{ 'aria-label': 'search' }}
             />
             <SearchIconWrapper>
-                <SearchIcon />
+                <SearchIcon sx={{
+                    fontSize: {
+                        xs: '16px',
+                        sm: '24px',
+                        md: '32px',
+                    }
+                }} />
             </SearchIconWrapper>
         </Search>
     );
