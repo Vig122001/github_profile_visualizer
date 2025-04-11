@@ -16,7 +16,7 @@ const MainLayout = () => {
     >
 
       <Topbar />
-      <Box component="main" sx={{ p: 2 }}>
+      <Box component="main">
         <Outlet />
       </Box>
     </Box>
